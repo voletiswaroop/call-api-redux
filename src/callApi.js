@@ -14,10 +14,10 @@ const CallApi = () => {
 
   const apiList = finalApiData.map((item, index) => {
     return (<li key={index}>
-      <span>{item.name}</span>
-      <span>{item.username}</span>
-      <span>{item.email}</span>
-      <span>{item.phone}</span>
+      <span>{item && item.name ? item.name : ''}</span>
+      <span>{item && item.username ? item.username : ''}</span>
+      <span>{item && item.email ? item.email : ''}</span>
+      <span>{item && item.phone ? item.phone : ''}</span>
     </li>)
   })
 
