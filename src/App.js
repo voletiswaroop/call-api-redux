@@ -1,25 +1,15 @@
-import logo from './logo.svg';
+import React, { Suspense } from 'react';
+import ErrorBoundary from './ErrorBoundary'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const CallApi = React.lazy(() => import('./callApi'));
+
+const App = () => (
+  <ErrorBoundary>
+    <Suspense fallback={<div>Loading component...</div>}>
+      <CallApi />
+    </Suspense>
+  </ErrorBoundary>
+);
 
 export default App;
