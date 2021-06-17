@@ -7,7 +7,7 @@ This App has built using:
 - React Hooks
 - Able to handle errors using via Error boundary
 - Light weight / Optimized code
-- Code Splitting
+- Code Splitting using lazy load
 
 # Setup
 
