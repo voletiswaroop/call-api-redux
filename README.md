@@ -1,8 +1,9 @@
 # Getting Started with Call API app
 
-It's a simple app which shows the list of various data from API
+It's a simple react redux app which shows the list of various data from API
 This App has built using:
 
+- React Redux
 - React Hooks
 - Able to handle errors using via Error boundary
 - Light weight / Optimized code
@@ -13,8 +14,8 @@ This App has built using:
 ## install
 
 ```
-Clone the repo git clone https://github.com/voletiswaroop/call-api-hooks.git
-cd call-api-hooks
+Clone the repo git clone https://github.com/voletiswaroop/call-api-redux.git
+cd call-api-redux
 ```
 
 ## Use node version v10.16.2
@@ -32,7 +33,7 @@ The react app's entry point is `src/shared/App.js`.
 
 This Project contains multiple react projects listed below:
 
-- [Demo](https://voletiswaroop.github.io/call-api-hooks)
+- [Demo](https://voletiswaroop.github.io/call-api-redux)
 
 # Copyright and License
 
