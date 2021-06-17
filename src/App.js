@@ -2,12 +2,13 @@ import React, { Suspense } from 'react';
 import ErrorBoundary from './ErrorBoundary'
 import './App.css';
 
-const CallApi = React.lazy(() => import('./callApi'));
+// import EmployeeList from './containers/EmployeeList'
+const EmployeeList = React.lazy(() => import('./containers/EmployeeList'));
 
 const App = () => (
   <ErrorBoundary>
     <Suspense fallback={<div>Loading component...</div>}>
-      <CallApi />
+      <EmployeeList />
     </Suspense>
   </ErrorBoundary>
 );
